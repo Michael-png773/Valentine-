@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Tatyanna ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    text-align: center;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.slideshow {
+    position: relative;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    color: #ff4e75;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio autoplay loop controls>
+    <source src="love.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+<h1>To the most beautiful girl in the world, my Tatyanna</h1>
+
+<p>
+From the very first moment you came into my life, I knew I loved you and wanted you.
+You are everything I have ever asked for. You make my days brighter, my heart calmer,
+and my world better.
+</p>
+
+<p>
+Every smile of yours means more to me than you know.
+</p>
+
+<p>
+You are my happiness, my peace, and my best friend.
+I cannot imagine a future without you in it.
+</p>
+
+<p>
+I know you said you do not celebrate Valentine’s Day because you see it as a pagan celebration.
+I respect how you feel. But allow me, please. Let me show you that Valentine’s Day is about love.
+It is about choosing someone and celebrating them.
+</p>
+
+<p>
+And you deserve to be celebrated.
+You deserve to be loved openly, proudly, and especially on that day too.
+</p>
+
+<div class="slideshow">
+
+<div class="slide"><img src="pic1.jpg"></div>
+<div class="slide"><img src="pic2.jpg"></div>
+<div class="slide"><img src="pic3.jpg"></div>
+<div class="slide"><img src="pic4.jpg"></div>
+<div class="slide"><img src="pic5.jpg"></div>
+<div class="slide"><img src="pic6.jpg"></div>
+<div class="slide"><img src="pic7.jpg"></div>
+<div class="slide"><img src="pic8.jpg"></div>
+<div class="slide"><img src="pic9.jpg"></div>
+
+</div>
+
+<h2>Will you be my Valentine? ❤️</h2>
+
+<button onclick="yesClick()">Yes 💕</button>
+
+</div>
+
+<script>
+let index = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    index++;
+    if (index > slides.length) {
+        index = 1;
+    }
+
+    slides[index - 1].style.display = "block";
+    setTimeout(showSlides, 3000);
+}
+
+function yesClick() {
+    alert("You just made me the happiest man alive ❤️");
+}
+</script>
+
+</body>
+</html>
+
